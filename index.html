@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do It | Simple Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Tasks</h1>
+      <form id="taskForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="What needs to be done?"
+          required
+        />
+        <button type="submit">+</button>
+      </form>
+      <div id="taskList" class="sortable-list"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
